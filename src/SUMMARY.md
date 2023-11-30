@@ -2,7 +2,7 @@
 
 - [Installation](installation.md)
 - [Finding VRMs](findvrms.md)
-- [Configuration](configuration/configuration.md)
+- [Configuration](configuration.md)
 	- [IK](IK.md)
 	- [Locomotion](Locomotion.md)
 	- [Lighting](Lighting.md)
