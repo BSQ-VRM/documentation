@@ -8,6 +8,6 @@
 	- [Lighting](Lighting.md)
 	- [Expressions](Expressions.md)
 	- [Virtual Motion Capture](VMC.md)
-	- [Wind](wind.md)
+	- [Wind](Wind.md)
 	- [Mirror](Mirror.md)
 	- [Finger Posing](fingerposing.md)

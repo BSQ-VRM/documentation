@@ -1,5 +1,5 @@
 # Expressions
-*AKA. Blendshapes, Shapekeys, etc.
+*AKA. Blendshapes, Shapekeys, etc.*
 
 ## What are expressions?
 
