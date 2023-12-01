@@ -1,5 +1,5 @@
 # Summary
-
+- [Information](Information.md)
 - [Installation (Mod & VRMs)](installation.md)
 - [Finding VRMs](findvrms.md)
 - [Configuration](configuration.md)
