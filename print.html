@@ -89,7 +89,7 @@
 
         <nav id="sidebar" class="sidebar" aria-label="Table of contents">
             <div class="sidebar-scrollbox">
-                <ol class="chapter"><li class="chapter-item expanded "><a href="installation.html"><strong aria-hidden="true">1.</strong> Installation</a></li><li class="chapter-item expanded "><a href="findvrms.html"><strong aria-hidden="true">2.</strong> Finding VRMs</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">3.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="IK.html"><strong aria-hidden="true">3.1.</strong> IK</a></li><li class="chapter-item expanded "><a href="Locomotion.html"><strong aria-hidden="true">3.2.</strong> Locomotion</a></li><li class="chapter-item expanded "><a href="Lighting.html"><strong aria-hidden="true">3.3.</strong> Lighting</a></li><li class="chapter-item expanded "><a href="Expressions.html"><strong aria-hidden="true">3.4.</strong> Expressions</a></li><li class="chapter-item expanded "><a href="VMC.html"><strong aria-hidden="true">3.5.</strong> Virtual Motion Capture</a></li></ol></li></ol>
+                <ol class="chapter"><li class="chapter-item expanded "><a href="installation.html"><strong aria-hidden="true">1.</strong> Installation (Mod & VRMs)</a></li><li class="chapter-item expanded "><a href="findvrms.html"><strong aria-hidden="true">2.</strong> Finding VRMs</a></li><li class="chapter-item expanded "><a href="configuration.html"><strong aria-hidden="true">3.</strong> Configuration</a></li><li><ol class="section"><li class="chapter-item expanded "><a href="IK.html"><strong aria-hidden="true">3.1.</strong> IK</a></li><li class="chapter-item expanded "><a href="Locomotion.html"><strong aria-hidden="true">3.2.</strong> Locomotion</a></li><li class="chapter-item expanded "><a href="Lighting.html"><strong aria-hidden="true">3.3.</strong> Lighting</a></li><li class="chapter-item expanded "><a href="Expressions.html"><strong aria-hidden="true">3.4.</strong> Expressions</a></li><li class="chapter-item expanded "><a href="VMC.html"><strong aria-hidden="true">3.5.</strong> Virtual Motion Capture</a></li><li class="chapter-item expanded "><a href="wind.html"><strong aria-hidden="true">3.6.</strong> Wind</a></li><li class="chapter-item expanded "><a href="Mirror.html"><strong aria-hidden="true">3.7.</strong> Mirror</a></li><li class="chapter-item expanded "><a href="fingerposing.html"><strong aria-hidden="true">3.8.</strong> Finger Posing</a></li></ol></li></ol>
             </div>
             <div id="sidebar-resize-handle" class="sidebar-resize-handle">
                 <div class="sidebar-resize-indicator"></div>
@@ -175,6 +175,17 @@
                 <div id="content" class="content">
                     <main>
                         <h1 id="how-to-install-the-mod"><a class="header" href="#how-to-install-the-mod">How to install the mod</a></h1>
+<ul>
+<li>Download the mod from the source you found it from</li>
+<li>Install the mod through BMBF</li>
+<li>NOTE: This mod is very heavy(~100mb). Installation may take a minute so don't panic.</li>
+</ul>
+<h1 id="how-to-install-vrm-files"><a class="header" href="#how-to-install-vrm-files">How to install VRM Files</a></h1>
+<ol>
+<li><a href="findvrms.html">Find the VRMs you want to install</a></li>
+<li>Open up BMBF/QAVS in your headset</li>
+<li>Drag and drop the VRMs you want to install into the bmbf upload page</li>
+</ol>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="where-to-find-vrms"><a class="header" href="#where-to-find-vrms">Where to Find VRMS</a></h1>
 <h2 id="boothpm"><a class="header" href="#boothpm"><a href="https://booth.pm/en/browse/3D%20Characters">Booth.PM</a></a></h2>
 <ul>
@@ -215,7 +226,10 @@
 </ul>
 <h2 id="available-options-1"><a class="header" href="#available-options-1">Available options</a></h2>
 <ul>
-<li>Leg Swivel: This is an important one! Adjusting this value can fix issues where some avatars may bend their legs to the side. This value changes the angle which the knees go when crouching for example.</li>
+<li>Foot Distance: This is the distance that will be roughly maintained between your feet.</li>
+<li>Step Threshold: This is the distance your head must move before either foot takes a step.</li>
+<li>Step Height: This is the height your feet will move up when taking a step.</li>
+<li>Step Offset: this is the offset your feet will have relative to your head.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="lighting"><a class="header" href="#lighting">Lighting</a></h1>
 <h2 id="available-options-2"><a class="header" href="#available-options-2">Available options</a></h2>
@@ -234,7 +248,111 @@
 <li>For regular maps, I recommend a brightness of 0.7, saturation of 0.3, and a minimum brightness of 0.6</li>
 <li>For Lightshows, I recommend a brightness of 0.8, saturation of 0.7, and a minimum brightness of 0.3</li>
 </ul>
-<div style="break-before: page; page-break-before: always;"></div><div style="break-before: page; page-break-before: always;"></div><h1 id="virtual-motion-capture"><a class="header" href="#virtual-motion-capture">Virtual Motion Capture</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="expressions"><a class="header" href="#expressions">Expressions</a></h1>
+<p>*AKA. Blendshapes, Shapekeys, etc.</p>
+<h2 id="what-are-expressions"><a class="header" href="#what-are-expressions">What are expressions?</a></h2>
+<ul>
+<li>Expressions are movements made on your face. For example, blinking, smiling, anger, etc. This includes face tracking and lip syncing (Not yet released).</li>
+</ul>
+<h2 id="available-options-3"><a class="header" href="#available-options-3">Available options</a></h2>
+<h4 id="basic"><a class="header" href="#basic">Basic</a></h4>
+<ul>
+<li>Auto Blink: This makes the avatar automatically blink.</li>
+<li>Blink Wait Time: This is the amount of time to wait between blinks
+<ul>
+<li>The actual wait time is calculated based on 1.5(seconds) + (<em>Wait Time</em> * 0.0-1.0(random value))</li>
+</ul>
+</li>
+<li>Mock Eye Movement: This option makes the eyes look in different directions every 1-2 seconds, makes the avatar look more natural.</li>
+<li>Neutral Expression: This is the expression shown when no buttons/triggers are held down</li>
+</ul>
+<h4 id="controller-triggers"><a class="header" href="#controller-triggers">Controller Triggers</a></h4>
+<ul>
+<li>Each option here represents a button/trigger on your controller. The selected expression will activate when you press down this button/trigger.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="virtual-motion-capture"><a class="header" href="#virtual-motion-capture">Virtual Motion Capture</a></h1>
+<h2 id="what-could-virtual-motion-capture-possibly-be-used-for"><a class="header" href="#what-could-virtual-motion-capture-possibly-be-used-for">What could Virtual Motion Capture possibly be used for???</a></h2>
+<ul>
+<li>This mod makes use of the Virtual Motion Capture Protocall to allow for FBT through SlimeVR or other methods that come up in the future.
+<ul>
+<li>NOTE: As of release, FBT is not fully implemented and you can only send positions via VMCP.</li>
+</ul>
+</li>
+</ul>
+<h2 id="sender"><a class="header" href="#sender">Sender</a></h2>
+<h4 id="available-options-4"><a class="header" href="#available-options-4">Available Options</a></h4>
+<ul>
+<li>Enable Sender: This enables sending controller and headset positions over Wi-Fi through the VMC Protocall.</li>
+<li>Destination IP Address: This is the IP address you want to send VMC Protocall data to. This is typically the IP address of your pc or your quest itself if you run SlimeVR through termux on the quest.</li>
+<li>Destionation Port: This is the port to send data through. Typically <code>3950</code>. This is the same value as the <code>Port In</code> value in SlimeVR VMC settings.</li>
+</ul>
+<h2 id="receiver-na"><a class="header" href="#receiver-na">Receiver (N/A)</a></h2>
+<h4 id="available-options-5"><a class="header" href="#available-options-5">Available Options</a></h4>
+<ul>
+<li>Enable Receiver: This enables receiving tracker/bone positions over Wi-Fi through the VMC Protocall.</li>
+<li>Receiver Port: This is the port you want to receive positions through. Typically <code>3949</code>. Same value as the <code>Port Out</code> in SlimeVR VMC settings.</li>
+</ul>
+<h2 id="full-body-tracking-na"><a class="header" href="#full-body-tracking-na">Full Body Tracking (N/A)</a></h2>
+<h4 id="available-options-6"><a class="header" href="#available-options-6">Available Options</a></h4>
+<ul>
+<li>Enable FBT: This enables Full Body Tracking(duh).</li>
+<li>Right Knee Tracker: Tracker used for the avatar's right knee.</li>
+<li>Left Knee Tracker: Tracker used for the avatar's left knee.</li>
+<li>Right Foot Tracker: Tracker used for the avatar's right foot.</li>
+<li>Left Foot Tracker: Tracker used for the avatar's left foot.</li>
+<li>Waist Tracker: Tracker used for the avatar's waist.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="wind"><a class="header" href="#wind">Wind</a></h1>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="mirror"><a class="header" href="#mirror">Mirror</a></h1>
+<h2 id="available-options-7"><a class="header" href="#available-options-7">Available options</a></h2>
+<ul>
+<li>Enable Mirror: Whether the mirror should show up or not.</li>
+<li>Size: Size of the mirror itself</li>
+<li>Displayer layers: What objects should be reflected in the mirror
+<ul>
+<li>All</li>
+<li>All Except UI</li>
+<li>Only Avatar</li>
+<li>Avatar and Saber</li>
+<li>Avatar, Saber, and Notes</li>
+<li>Avatar, Saber, Notes, and Walls</li>
+</ul>
+</li>
+<li>Tracked Bone: Part of the body that should be tracked by the mirror's camera
+<ul>
+<li>Disabled (Follow Mirror)</li>
+<li>Waist (Follows the Waist)</li>
+<li>Chest (Follows the Chest)</li>
+<li>Head (Follows the Head)</li>
+</ul>
+</li>
+<li>Scene: Where the mirror should be displayed
+<ul>
+<li>Both</li>
+<li>Menu</li>
+<li>Game</li>
+</ul>
+</li>
+<li>FOV: Field of View of the mirror's camera.</li>
+</ul>
+<div style="break-before: page; page-break-before: always;"></div><h1 id="finger-posing"><a class="header" href="#finger-posing">Finger Posing</a></h1>
+<h2 id="helpful-diagram"><a class="header" href="#helpful-diagram">Helpful Diagram</a></h2>
+<p><img src="https://github.com/BSQ-VRM/VRM-Qavatars/blob/main/assets/human_hand.png?raw=true" alt="file:/D:/VRM-Qavatars/assets/human_hand.png" /></p>
+<h2 id="how-do-i-configure-finger-posing"><a class="header" href="#how-do-i-configure-finger-posing">How do I Configure Finger Posing?</a></h2>
+<ul>
+<li>Each subcategory contains a finger on the avatar's hand. Each one has 4 options.
+<ul>
+<li>Distal: The last joint on your finger, your finger tips</li>
+<li>Intermediate: The middle joint on your finger.</li>
+<li>Proximal: The first joint on your finger.</li>
+<li>Proximal Horizontal Angle: The horizontal angle of the first joint of the finger, useful for making splayed hands.</li>
+</ul>
+</li>
+</ul>
+<h2 id="future-features"><a class="header" href="#future-features">Future Features</a></h2>
+<ul>
+<li>Bind finger poses to different events (Buttons, Triggers, Scoring, etc...). </li>
+</ul>
 
                     </main>
 
