@@ -1,4 +1,3 @@
-
 # Wind
 - Based off [WindForVRM](https://github.com/malaybaku/WindForVRM)
 ## Available options
