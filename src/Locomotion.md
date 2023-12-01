@@ -1,4 +1,3 @@
-
 # Locomotion
 
 
@@ -8,4 +7,7 @@
 
 ## Available options
 
--  Leg Swivel: This is an important one! Adjusting this value can fix issues where some avatars may bend their legs to the side. This value changes the angle which the knees go when crouching for example.
+- Foot Distance: This is the distance that will be roughly maintained between your feet.
+- Step Threshold: This is the distance your head must move before either foot takes a step.
+- Step Height: This is the height your feet will move up when taking a step.
+- Step Offset: this is the offset your feet will have relative to your head.

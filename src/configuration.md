@@ -1,4 +1,3 @@
-
 # How to configure your avatar
 
 

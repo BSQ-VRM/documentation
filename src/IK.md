@@ -1,4 +1,3 @@
-
 # IK
 *AKA. Inverse Kinematics*
 
@@ -8,7 +7,7 @@
 
 ## Available options
 
--  Leg Swivel: This is an important one! Adjusting this value can fix issues where some avatars may bend their legs to the side. This value changes the angle which the knees go when crouching for example.
+- Leg Swivel: This is an important one! Adjusting this value can fix issues where some avatars may bend their legs to the side. This value changes the angle which the knees go when crouching for example.
 - Arm Swivel: Similar to leg swivel but not as important. This value adjusts the angle that you elbows go in when bringing your arms towards your body.
 - Body Stiffness: This value determines how stiff your torso will be. You can see how this value affects your avatar by leaning forwards and backwards with a low and high stiffness.
 - Shoulder Rotation Weight: This value will lower the shoulders the higher the value.
