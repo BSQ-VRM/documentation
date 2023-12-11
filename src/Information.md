@@ -5,5 +5,6 @@
 
 ## The Performance Must be Awful!!
 - The performance is actually pretty good and definitely playable. Depending on the avatar you can potentially see: 
-	- Quest 2 can run 75-90fps with base settings
-	- Quest 3 can run 90-120fps with base settings
+	- Quest 2 can run 60-75fps with base settings
+	- Quest 3 can run 75-90fps with base settings
+	- These can be increased by toggling off other graphic settings and/or overclocking in anytweaks.
