@@ -177,8 +177,15 @@
 <h2 id="available-options"><a class="header" href="#available-options">Available options</a></h2>
 <ul>
 <li>Enable Mirror: Whether the mirror should show up or not.</li>
-<li>Size: Size of the mirror itself</li>
-<li>Displayer layers: What objects should be reflected in the mirror
+<li>Size: Size of the mirror itself.</li>
+<li>Aspect: The aspect ratio of the mirror.
+<ul>
+<li>1.0 for square</li>
+<li>1.77 for 16:9 (Desktop)</li>
+<li>0.56 for 9:16 (Vertical Desktop/Tiktok format)</li>
+</ul>
+</li>
+<li>Displayer layers: What objects should be reflected in the mirror.
 <ul>
 <li>All</li>
 <li>All Except UI</li>
@@ -188,7 +195,7 @@
 <li>Avatar, Saber, Notes, and Walls</li>
 </ul>
 </li>
-<li>Tracked Bone: Part of the body that should be tracked by the mirror's camera
+<li>Tracked Bone: Part of the body that should be tracked by the mirror's camera.
 <ul>
 <li>Disabled (Follow Mirror)</li>
 <li>Waist (Follows the Waist)</li>
@@ -196,6 +203,7 @@
 <li>Head (Follows the Head)</li>
 </ul>
 </li>
+<li>Tracking Distance: Distance away the camera should be from the bone that is being tracked.</li>
 <li>Scene: Where the mirror should be displayed
 <ul>
 <li>Both</li>
@@ -204,6 +212,10 @@
 </ul>
 </li>
 <li>FOV: Field of View of the mirror's camera.</li>
+<li>Near Clip: How close to the camera to stop showing objects.</li>
+<li>Border Color: Color of the border around the mirror.</li>
+<li>Transparent Background: Replaces the black part of the mirror with transparent</li>
+<li>Show Handle: Whether or not to show the handle on the mirror.</li>
 </ul>
 
                     </main>

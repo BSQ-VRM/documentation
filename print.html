@@ -179,15 +179,16 @@
 <li>This mod is a Custom Avatars mod for Beat Saber for the standalone version of Beat Saber.</li>
 <li>This mod utilizes the <a href="https://vrm.dev/en/vrm/vrm_about.html">VRM Format</a> to load in models.
 <ul>
-<li>Source for these models can be found <a href="findvrms.html">This Section</a></li>
+<li>Sources for these models can be found <a href="findvrms.html">This Section</a></li>
 </ul>
 </li>
 </ul>
-<h2 id="what-should-i-know"><a class="header" href="#what-should-i-know">What Should I know?</a></h2>
+<h2 id="the-performance-must-be-awful"><a class="header" href="#the-performance-must-be-awful">The Performance Must be Awful!!</a></h2>
 <ul>
-<li>This mod does not have perfect native performance. From my testing I get around ~30-40fps depending on the avatar and the settings. This will likely be improved in future updates.
+<li>The performance is actually pretty good and definitely playable. Depending on the avatar you can potentially see: 
 <ul>
-<li>It is recommended that you use Hollywood to render replays with avatars.</li>
+<li>Quest 2 can run 75-90fps with base settings</li>
+<li>Quest 3 can run 90-120fps with base settings</li>
 </ul>
 </li>
 </ul>
@@ -303,8 +304,8 @@
 <h4 id="available-options-4"><a class="header" href="#available-options-4">Available Options</a></h4>
 <ul>
 <li>Enable Sender: This enables sending controller and headset positions over Wi-Fi through the VMC Protocall.</li>
-<li>Destination IP Address: This is the IP address you want to send VMC Protocall data to. This is typically the IP address of your pc or your quest itself if you run SlimeVR through termux on the quest.</li>
-<li>Destionation Port: This is the port to send data through. Typically <code>3950</code>. This is the same value as the <code>Port In</code> value in SlimeVR VMC settings.</li>
+<li>Destination IP Address: This is the IP address you want to send VMC Protocall data to. This is typically the IP address of your pc or your quest itself if you run SlimeVR through Termux on the Quest.</li>
+<li>Destination Port: This is the port to send data through. Typically <code>3950</code>. This is the same value as the <code>Port In</code> value in SlimeVR VMC settings.</li>
 </ul>
 <h2 id="receiver-na"><a class="header" href="#receiver-na">Receiver (N/A)</a></h2>
 <h4 id="available-options-5"><a class="header" href="#available-options-5">Available Options</a></h4>
@@ -336,8 +337,15 @@
 <h2 id="available-options-8"><a class="header" href="#available-options-8">Available options</a></h2>
 <ul>
 <li>Enable Mirror: Whether the mirror should show up or not.</li>
-<li>Size: Size of the mirror itself</li>
-<li>Displayer layers: What objects should be reflected in the mirror
+<li>Size: Size of the mirror itself.</li>
+<li>Aspect: The aspect ratio of the mirror.
+<ul>
+<li>1.0 for square</li>
+<li>1.77 for 16:9 (Desktop)</li>
+<li>0.56 for 9:16 (Vertical Desktop/Tiktok format)</li>
+</ul>
+</li>
+<li>Displayer layers: What objects should be reflected in the mirror.
 <ul>
 <li>All</li>
 <li>All Except UI</li>
@@ -347,7 +355,7 @@
 <li>Avatar, Saber, Notes, and Walls</li>
 </ul>
 </li>
-<li>Tracked Bone: Part of the body that should be tracked by the mirror's camera
+<li>Tracked Bone: Part of the body that should be tracked by the mirror's camera.
 <ul>
 <li>Disabled (Follow Mirror)</li>
 <li>Waist (Follows the Waist)</li>
@@ -355,6 +363,7 @@
 <li>Head (Follows the Head)</li>
 </ul>
 </li>
+<li>Tracking Distance: Distance away the camera should be from the bone that is being tracked.</li>
 <li>Scene: Where the mirror should be displayed
 <ul>
 <li>Both</li>
@@ -363,6 +372,10 @@
 </ul>
 </li>
 <li>FOV: Field of View of the mirror's camera.</li>
+<li>Near Clip: How close to the camera to stop showing objects.</li>
+<li>Border Color: Color of the border around the mirror.</li>
+<li>Transparent Background: Replaces the black part of the mirror with transparent</li>
+<li>Show Handle: Whether or not to show the handle on the mirror.</li>
 </ul>
 <div style="break-before: page; page-break-before: always;"></div><h1 id="finger-posing"><a class="header" href="#finger-posing">Finger Posing</a></h1>
 <h2 id="helpful-diagram"><a class="header" href="#helpful-diagram">Helpful Diagram</a></h2>
