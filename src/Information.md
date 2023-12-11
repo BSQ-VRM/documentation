@@ -1,8 +1,9 @@
 ## What is This Mod?
 - This mod is a Custom Avatars mod for Beat Saber for the standalone version of Beat Saber.
 - This mod utilizes the [VRM Format](https://vrm.dev/en/vrm/vrm_about.html) to load in models.
-	- Source for these models can be found [This Section](findvrms.md)
+	- Sources for these models can be found [This Section](findvrms.md)
 
-## What Should I know?
-- This mod does not have perfect native performance. From my testing I get around ~30-40fps depending on the avatar and the settings. This will likely be improved in future updates.
-	- It is recommended that you use Hollywood to render replays with avatars.
+## The Performance Must be Awful!!
+- The performance is actually pretty good and definitely playable. Depending on the avatar you can potentially see: 
+	- Quest 2 can run 75-90fps with base settings
+	- Quest 3 can run 90-120fps with base settings

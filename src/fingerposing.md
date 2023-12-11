@@ -10,6 +10,5 @@
 	- Proximal: The first joint on your finger.
 	- Proximal Horizontal Angle: The horizontal angle of the first joint of the finger, useful for making splayed hands.
 
-
 ## Future Features
 - Bind finger poses to different events (Buttons, Triggers, Scoring, etc...). 

@@ -10,8 +10,8 @@
 
 #### Available Options
 - Enable Sender: This enables sending controller and headset positions over Wi-Fi through the VMC Protocall.
-- Destination IP Address: This is the IP address you want to send VMC Protocall data to. This is typically the IP address of your pc or your quest itself if you run SlimeVR through termux on the quest.
-- Destionation Port: This is the port to send data through. Typically `3950`. This is the same value as the `Port In` value in SlimeVR VMC settings.
+- Destination IP Address: This is the IP address you want to send VMC Protocall data to. This is typically the IP address of your pc or your quest itself if you run SlimeVR through Termux on the Quest.
+- Destination Port: This is the port to send data through. Typically `3950`. This is the same value as the `Port In` value in SlimeVR VMC settings.
 
 ## Receiver (N/A)
 
